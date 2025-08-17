@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['mantenimientoSistema_v2.1.py'],
+    ['Mantenimiento de Sistema\\mantenimientoSistema_v2.1.py'],
     pathex=[],
     binaries=[],
     datas=[],
