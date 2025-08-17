@@ -69,7 +69,8 @@ while True:
         print(Fore.GREEN + "\nActualización finalizada.\n")
     elif opcion == "2":
         print(Fore.GREEN + "\nIniciando limpieza de la papelera de reciclaje...")
-        os.system('PowerShell.exe Clear-RecycleBin -Force')
+        #os.system('PowerShell.exe Clear-RecycleBin -Force')
+        os.system('PowerShell.exe Clear-RecycleBin -Force -Scope CurrentUser')
         print(Fore.GREEN + "\nPapelera de reciclaje vaciada.\n")
     elif opcion == "3":
         disco = input(Fore.WHITE + "Introduce el nombre del disco a inspeccionar (Ejemplo: C): ")
@@ -90,3 +91,5 @@ while True:
         sys.exit()
     else:
         print(Fore.RED + "Opción no válida, recuerde que sólo debe introducir un número.\n")
+
+
